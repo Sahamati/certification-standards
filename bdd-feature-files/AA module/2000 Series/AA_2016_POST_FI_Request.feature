@@ -8,7 +8,7 @@ Feature: On calling POST FI Request API, Verify that on sending FI request twice
   send FI request, check if FI/request is received in mock FIP, Send FI/notification with
   Status 'READY'. Wait for FI/Notification received at FIU with READY status. Send FI/Fetch
   request and Finally Send FI request again and Verify that the HTTP status code 400 is received.
-    Given Calling the POST FI Request API
+    Given Calling the "POST /FI/request" Flow API
     When  POST action is performed
     Then  Verify that the response code displayed is HTTP 400
     And   Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from current

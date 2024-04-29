@@ -3,8 +3,8 @@ Feature: On calling POST FI fetch Request API, verify that on sending FI fetch r
 
   Scenario: 2030_1 On calling POST FI fetch Request API, Use the pre-linked user details from
   settings and do the following steps:
-  1. Send a valid consent request
-  2. Set POST consent response in  FIP mock server.
+  1. Set POST consent response in  FIP mock server.
+  2. Send a valid consent request
   3. Set consent notification response in FIU mock server.
   4. Ask the user to approve the consent & confirm
   5. Send a valid consent handle to receive APPROVED status
@@ -27,8 +27,8 @@ Feature: On calling POST FI fetch Request API, verify that on sending FI fetch r
 
   Scenario: 2030_2 On calling POST FI fetch Request API, use the pre-linked user details from
   settings and follow below steps:(Also try a variation to perform step-10 before step-8 and avoid step-9)
-  1. Send a valid consent request.
-  2. Set the Post consent response in FIP mock server.
+  1. Set the Post consent response in FIP mock server.
+  2. Send a valid consent request.
   3. Set the consent notification response in FIU mock server.
   4. Ask the user to approve the consent and confirm.
   5. Send a valid consent handle to receive APPROVED status.

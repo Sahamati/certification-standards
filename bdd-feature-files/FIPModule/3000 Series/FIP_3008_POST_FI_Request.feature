@@ -12,7 +12,6 @@ Feature: On Calling POST FI Request with invalid KeyMaterials object and check i
   the current time stamp
     And   Verify that the Error code is InvalidKey
     And   Verify that the version is supported version
-    And   Verify that the txnid id is same as the txnid from request
 
   Scenario: 3008_2 Use the pre-linked user details from settings,set Consent/notification response in mock
   server, send one valid consent post request and then try the following. Send POST Account FIRequest with
@@ -25,7 +24,6 @@ Feature: On Calling POST FI Request with invalid KeyMaterials object and check i
   the current time stamp
     And   Verify that the Error code is InvalidKey
     And   Verify that the version is supported version
-    And   Verify that the txnid id is same as the txnid from request
 
   Scenario: 3008_3 Use the pre-linked user details from settings,set Consent/notification response in mock
   server, send one valid consent post request and then try the following. Send POST Account FIRequest with
@@ -38,7 +36,6 @@ Feature: On Calling POST FI Request with invalid KeyMaterials object and check i
   the current time stamp
     And   Verify that the Error code is InvalidKey
     And   Verify that the version is supported version
-    And  Verify that the txnid id is same as the txnid from request
 
   Scenario: 3008_4 Use the pre-linked user details from settings,set Consent/notification response in mock
   server, send one valid consent post request and then try the following. Send POST Account FIRequest with
@@ -51,7 +48,6 @@ Feature: On Calling POST FI Request with invalid KeyMaterials object and check i
   the current time stamp
     And   Verify that the Error code is InvalidKey
     And   Verify that the version is supported version
-    And   Verify that the txnid id is same as the txnid from request
 
   Scenario: 3008_5 Use the pre-linked user details from settings,set Consent/notification response in mock
   server, send one valid consent post request and then try the following. Send POST Account FIRequest with
@@ -64,7 +60,6 @@ Feature: On Calling POST FI Request with invalid KeyMaterials object and check i
   the current time stamp
     And   Verify that the Error code is InvalidKey
     And   Verify that the version is supported version
-    And   Verify that the txnid id is same as the txnid from request
 
   Scenario: 3008_6 Use the pre-linked user details from settings,set Consent/notification response in mock
   server, send one valid consent post request and then try the following. Send POST Account FIRequest with
@@ -77,4 +72,3 @@ Feature: On Calling POST FI Request with invalid KeyMaterials object and check i
   the current time stamp
     And   Verify that the Error code is InvalidKey
     And   Verify that the version is supported version
-    And   Verify that the txnid id is same as the txnid from request

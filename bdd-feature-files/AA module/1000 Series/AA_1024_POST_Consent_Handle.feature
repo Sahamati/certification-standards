@@ -1,12 +1,11 @@
 Feature: On calling POST Consent Handle request API,Verify that on sending consent
-  handle request for an approved consent but user deregistered from AA, response with
-  consent status APPROVED is received.
+  handle request for an approved consent but user deregistered from AA, error response is received.
 
-  Scenario: 1024_1 On calling POST Consent Handle request API,generate a random customer id,
-  ask the user to register the generated customer id to AA, link 1 account and confirm.
+  Scenario: 1024_1 On calling POST Consent Handle request API,generate a random customerId,
+  ask the user to register the generated customerId to AA, link 1 account and confirm.
   Set the Post consent response on mock server, Then send a valid consent request for that
   FIType, ask the user to approve the consent & confirm, send a consent handle request to
-  receive APPROVED status, ask the user to deregister the customer id & confirm, and then
+  receive APPROVED status, ask the user to deregister the customerId & confirm, and then
   send a consent handle request and then Verify that the error response is received.
     Given Calling the "POST /Consent/handle" Flow API
     When  POST action is performed

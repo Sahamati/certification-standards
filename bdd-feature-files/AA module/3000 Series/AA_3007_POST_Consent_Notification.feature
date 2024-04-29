@@ -1,10 +1,10 @@
 Feature: On calling POST Consent Notification API, verify that on sending consent
-  notification request with invalid consent id, the error response is received.
+  notification request with invalid consentId, the error response is received.
 
   Scenario: 3007_1 On calling POST Consent Notification API, set the POST consent response in FIP mock server. Send a
   valid consent request and ask the user to approve the consent and confirm. Send a valid consent handle to receive
   APPROVED status. Send a consent fetch request and finally send a consent notification request. Generate a new UUID and
-  use as consent Id and Verify that the error response is received.
+  use as consentId and Verify that the error response is received.
     Given Calling the "POST /Consent/Notification" Flow API
     When  POST action is performed
     Then  Verify that the response code displayed is HTTP 400
@@ -16,7 +16,7 @@ Feature: On calling POST Consent Notification API, verify that on sending consen
 
   Scenario: 3007_2 On calling POST Consent Notification API, set the POST consent response in FIP mock server. Send a
   valid consent request and ask the user to approve the consent and confirm. Send a valid consent handle to receive
-  APPROVED status. Send a consent fetch request and finally send a consent notification request. Use the valid consent id
+  APPROVED status. Send a consent fetch request and finally send a consent notification request. Use the valid consentId
   and add an extra character at the end and Verify that the error response is received.
     Given Calling the "POST /Consent/Notification" Flow API
     When POST action is performed
@@ -29,7 +29,7 @@ Feature: On calling POST Consent Notification API, verify that on sending consen
 
   Scenario: 3007_3 On calling POST Consent Notification API, set the POST consent response in FIP mock server. Send a
   valid consent request and ask the user to approve the consent and confirm. Send a valid consent handle to receive
-  APPROVED status. Send a consent fetch request and finally send a consent notification request. Use the valid consent id
+  APPROVED status. Send a consent fetch request and finally send a consent notification request. Use the valid consentId
   and remove the last character and Verify that the error response is received.
     Given Calling the "POST /Consent/Notification" Flow API
     When POST action is performed

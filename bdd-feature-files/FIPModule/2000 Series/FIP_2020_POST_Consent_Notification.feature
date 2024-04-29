@@ -1,6 +1,5 @@
-Feature: On Calling POST Consent Notification request with null values, empty string, empty array and
-  not in enum values for each required field and check if it is responding with HTTP status code
-  400 (Bad request).
+Feature: On Calling POST Consent Notification request with basic invalid values for each
+  required field and check if it is responding with HTTP status code 400.
 
   Scenario: 2020_1 On Calling POST Consent Notification request with null values set in required field.
   Verify that HTTP 400 is displayed in response.

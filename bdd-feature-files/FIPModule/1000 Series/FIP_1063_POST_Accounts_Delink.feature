@@ -1,4 +1,4 @@
-Feature:On Calling Account de-link request with valid customer details and single
+Feature:On Calling Account delink request with valid customer details and single
   account detail with invalid api key,error response is received.
 
   Scenario: 1063_1 Pick a single user account with first supported FIType and send single

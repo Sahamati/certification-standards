@@ -31,7 +31,7 @@ Feature: On calling FIP and FIU Notifications API, verify that on FIP responding
   details from settings, set a valid FI response in mock FIP, send a FI request to AA, try
   setting the following invalid timestamp in FI fetch response in mock FIP, set FI notification
   response in FIU mock server, send a FI ready notification to AA and finally wait to receive
-  FI notification in mock FIU and Valid timestamp with +15 min from current time.
+  FI notification in mock FIU and Valid timestamp with +16 min from current time.
     Given Calling the "FIP and FIU Notifications" Flow API
     When  FIP and FIU Notifications API, action is performed
     Then  Verify that the POST FI notification received in the mock FIU app, the FIStatusNotification.sessionId is
@@ -43,7 +43,7 @@ Feature: On calling FIP and FIU Notifications API, verify that on FIP responding
   details from settings, set a valid FI response in mock FIP, send a FI request to AA, try
   setting the following invalid timestamp in FI fetch response in mock FIP, set FI notification
   response in FIU mock server, send a FI ready notification to AA and finally wait to receive
-  FI notification in mock FIU and Valid timestamp with -15 min from current time.
+  FI notification in mock FIU and Valid timestamp with -16 min from current time.
     Given Calling the "FIP and FIU Notifications" Flow API
     When  FIP and FIU Notifications API, action is performed
     Then  Verify that the POST FI notification received in the mock FIU app, the FIStatusNotification.sessionId is

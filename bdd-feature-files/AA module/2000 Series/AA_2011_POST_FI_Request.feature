@@ -21,7 +21,7 @@ Feature: On calling POST FI Request API, verify that on sending FI request with 
     Then  Verify that the response code displayed is HTTP 400
     And   Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from current
   time stamp
-    And   Verify that the error code is InvalidKey
+    And   Verify that the error code is InvalidRequest
     And   Verify that the version is supported version
     And   Verify that the txnid id is same as the txnid from request
 

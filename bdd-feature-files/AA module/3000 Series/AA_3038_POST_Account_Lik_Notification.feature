@@ -3,10 +3,10 @@ Feature: On calling POST Account Link Notification API, Verify that on sending
   error response is received.
 
   Scenario: 3038_1 On calling POST Account Link Notification API,Set the account
-  link response with AuthenticatorType as DIRECT in mock FIP. Generate a random customer
-  id. Ask the user to register the generated customer id and link a specific account
+  link response with AuthenticatorType as DIRECT in mock FIP. Generate a random customerId
+  Ask the user to register the generated customerId and link a specific account
   from mock FIP & confirm. Check if account link request is received for the same
-  account and customer id in mock FIP. Send a valid account link notification request
+  account and customerId in mock FIP. Send a valid account link notification request
   with alternate FIP key header and Verify that the error response is received.
     Given Calling the "POST /Account/link/Notification" Flow API
     When  POST action is performed

@@ -2,7 +2,7 @@ Feature: On Calling POST FI Request for a delinked account and check if it is re
   HTTP status code 400 (Bad request).
 
   Scenario: 3018_1 Pick a single user account with first supported FIType, send account link request, send
-  account token link request, set Consent/notification response in mock server, send consent post request,
+  account verify link request, set Consent/notification response in mock server, send consent post request,
   delink the account and then send one valid FI request. Send POST FIRequest for a delinked account. Verify
   that HTTP 400 is displayed in response.
     Given Calling the "POST /FI/Request" Flow API

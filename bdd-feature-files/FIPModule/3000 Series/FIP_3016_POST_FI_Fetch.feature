@@ -11,7 +11,7 @@ Feature:  Send FI request and FI fetch request for all combinations of the DataF
   2. 1 debit for 5000
   3. 1 credit for 10000
   4. 1 debit for 10000
-  Send FI Fetch for all combination of Datafilter operator and Data type for 1st month.
+  Send FI Fetch for all combination of DataFilter operator and Data type for 1st month.
     Given Calling the "POST /FI/fetch" Flow API
     When  POST action is performed
     Then  Verify that the Reponse code consent post request should be HTTP 200
@@ -30,7 +30,7 @@ Feature:  Send FI request and FI fetch request for all combinations of the DataF
   2. 1 debit for 5000
   3. 1 credit for 10000
   4. 1 debit for 10000.
-  Send FI Fetch for all combination of Datafilter operator and Data type for 2nd month.
+  Send FI Fetch for all combination of DataFilter operator and Data type for 2nd month.
     Given Calling the "POST /FI/fetch" Flow API
     When  POST action is performed
     Then  Verify that the Reponse code consent post request should be HTTP 200
@@ -49,7 +49,7 @@ Feature:  Send FI request and FI fetch request for all combinations of the DataF
   2. 1 debit for 5000
   3. 1 credit for 10000
   4. 1 debit for 10000.
-  Send FI Fetch for all combination of Datafilter operator and Data type for 3rd month.
+  Send FI Fetch for all combination of DataFilter operator and Data type for 3rd month.
     Given Calling the "POST /FI/fetch" Flow API
     When  POST action is performed
     Then  Verify that the Reponse code consent post request should be HTTP 200
@@ -68,7 +68,7 @@ Feature:  Send FI request and FI fetch request for all combinations of the DataF
   2. 1 debit for 5000
   3. 1 credit for 10000
   4. 1 debit for 10000.
-  Send FI Fetch for all combination of Datafilter operator and Data type for 4th month.
+  Send FI Fetch for all combination of DataFilter operator and Data type for 4th month.
     Given Calling the "POST /FI/fetch" Flow API
     When  POST action is performed
     Then  Verify that the Reponse code consent post request should be HTTP 200
@@ -87,7 +87,7 @@ Feature:  Send FI request and FI fetch request for all combinations of the DataF
   2. 1 debit for 5000
   3. 1 credit for 10000
   4. 1 debit for 10000.
-  Send FI Fetch for all combination of Datafilter operator and Data type for 5th month.
+  Send FI Fetch for all combination of DataFilter operator and Data type for 5th month.
     Given Calling the "POST /FI/fetch" Flow API
     When  POST action is performed
     Then  Verify that the Reponse code consent post request should be HTTP 200
@@ -106,7 +106,7 @@ Feature:  Send FI request and FI fetch request for all combinations of the DataF
   2. 1 debit for 5000
   3. 1 credit for 10000
   4. 1 debit for 10000.
-  Send FI Fetch for all combination of Datafilter operator and Data type for 6th month.
+  Send FI Fetch for all combination of DataFilter operator and Data type for 6th month.
     Given Calling the "POST /FI/fetch" Flow API
     When  POST action is performed
     Then  Verify that the Reponse code consent post request should be HTTP 200
@@ -125,7 +125,7 @@ Feature:  Send FI request and FI fetch request for all combinations of the DataF
   2. 1 debit for 5000
   3. 1 credit for 10000
   4. 1 debit for 10000.
-  Send FI Fetch for all combination of Datafilter operator and Data type for 7th month.
+  Send FI Fetch for all combination of DataFilter operator and Data type for 7th month.
     Given Calling the "POST /FI/fetch" Flow API
     When  POST action is performed
     Then  Verify that the Reponse code consent post request should be HTTP 200
@@ -144,7 +144,7 @@ Feature:  Send FI request and FI fetch request for all combinations of the DataF
   2. 1 debit for 5000
   3. 1 credit for 10000
   4. 1 debit for 10000.
-  Send FI Fetch for all combination of Datafilter operator and Data type for 8th month.
+  Send FI Fetch for all combination of DataFilter operator and Data type for 8th month.
     Given Calling the "POST /FI/fetch" Flow API
     When  POST action is performed
     Then  Verify that the Reponse code consent post request should be HTTP 200
@@ -163,7 +163,7 @@ Feature:  Send FI request and FI fetch request for all combinations of the DataF
   2. 1 debit for 5000
   3. 1 credit for 10000
   4. 1 debit for 10000.
-  Send FI Fetch for all combination of Datafilter operator and Data type for 9th month.
+  Send FI Fetch for all combination of DataFilter operator and Data type for 9th month.
     Given Calling the "POST /FI/fetch" Flow API
     When  POST action is performed
     Then  Verify that the Reponse code consent post request should be HTTP 200
@@ -182,7 +182,7 @@ Feature:  Send FI request and FI fetch request for all combinations of the DataF
   2. 1 debit for 5000
   3. 1 credit for 10000
   4. 1 debit for 10000.
-  Send FI Fetch for all combination of Datafilter operator and Data type for 10th month.
+  Send FI Fetch for all combination of DataFilter operator and Data type for 10th month.
     Given Calling the "POST /FI/fetch" Flow API
     When  POST action is performed
     Then  Verify that the Reponse code consent post request should be HTTP 200
@@ -201,7 +201,7 @@ Feature:  Send FI request and FI fetch request for all combinations of the DataF
   2. 1 debit for 5000
   3. 1 credit for 10000
   4. 1 debit for 10000.
-  Send FI Fetch for all combination of Datafilter operator and Data type for 11th month.
+  Send FI Fetch for all combination of DataFilter operator and Data type for 11th month.
     Given Calling the "POST /FI/fetch" Flow API
     When  POST action is performed
     Then  Verify that the Reponse code consent post request should be HTTP 200
@@ -220,7 +220,7 @@ Feature:  Send FI request and FI fetch request for all combinations of the DataF
   2. 1 debit for 5000
   3. 1 credit for 10000
   4. 1 debit for 10000.
-  Send FI Fetch for all combination of Datafilter operator and Data type for 12th month.
+  Send FI Fetch for all combination of DataFilter operator and Data type for 12th month.
     Given Calling the "POST /FI/fetch" Flow API
     When  POST action is performed
     Then  Verify that the Reponse code consent post request should be HTTP 200

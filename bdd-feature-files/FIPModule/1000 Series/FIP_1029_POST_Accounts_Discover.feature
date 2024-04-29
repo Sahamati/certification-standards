@@ -1,5 +1,5 @@
-Feature: On Calling POST Account discovery API with null values, empty string, empty arrays and not
-  in enum values for each required field and check if it is responding with a bad request.
+Feature: On Calling POST Account discovery API with basic invalid values for each required
+  field and check if it is responding with a bad request.
 
   Scenario: 1029_1 On Calling POST Account discovery with null values set in required field. Verify that HTTP
   400 is displayed in response.

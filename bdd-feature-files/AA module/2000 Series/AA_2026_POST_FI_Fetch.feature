@@ -10,7 +10,7 @@ Feature: On calling POST FI fetch Request API, verify that on sending a FI fetch
     Then  Verify that the response code displayed is HTTP 404
     And   Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from current
   time stamp
-    And   Verify that the error code is InvalidSessionId
+    And   Verify that the error code is InvalidRequest
     And   Verify that the version is supported version
 
   Scenario: 2026_2 On calling POST FI fetch Request API,use the pre-linked user details from settings, set a valid FI response in

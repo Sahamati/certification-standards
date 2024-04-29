@@ -3,7 +3,7 @@ Feature: On Calling POST FI Request with invalid consent object and check if it 
 
   Scenario: 3006_1 Use the pre-linked user details from settings,set Consent/notification response in mock
   server, send one valid consent post request and then try the following. Send POST Account FIRequest with
-  random consent id in Consent objects id field. Verify that HTTP 400 is displayed in response.
+  random consentId in Consent objects id field. Verify that HTTP 400 is displayed in response.
     Given Calling the "POST /FI/Request" Flow API
     When  POST action is performed
     Then  Verify that the Response code 400 is displayed
@@ -15,7 +15,7 @@ Feature: On Calling POST FI Request with invalid consent object and check if it 
 
   Scenario: 3006_2 Use the pre-linked user details from settings,set Consent/notification response in mock
   server, send one valid consent post request and then try the following. Send POST Account FIRequest with
-  consent id generated for alternate aa id in Consent objects id field. Verify that HTTP 400 is displayed
+  consentId generated for alternate aa id in Consent objects id field. Verify that HTTP 400 is displayed
   in response.
     Given Calling the "POST /FI/Request" Flow API
     When  POST action is performed

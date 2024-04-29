@@ -1,5 +1,5 @@
 Feature: On Calling POST Consent request with valid details and then send one more valid consent
-  request with the same consent id and check if the second request responds with HTTP status 400 (Bad request).
+  request with the same consentId and check if the second request responds with HTTP status 400 (Bad request).
 
   Scenario: 2016_1 Use the pre-linked user details from settings. Send POST Account Consent request twice
   with same value in consentId field. Verify that HTTP 400 is displayed in second response.

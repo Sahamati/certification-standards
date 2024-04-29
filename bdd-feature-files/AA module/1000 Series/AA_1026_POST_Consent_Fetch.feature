@@ -12,7 +12,7 @@ Feature: On calling POST Consent Fetch Flow API, Verify that on sending a valid
     Then  Verify that the response code 200 is received
     And   Verify that the field of Version contains the version of NBFC-AA Ecosystem API that is currently
   supported
-    And   Verify the ConsentId is a valid UUID string
+    And   Verify the consentId is a valid UUID string
     And   Verify that the status displayed is ACTIVE
     And   Verify that the create Timestamp is sent within time consent POST request and current time
     And   Verify that the signedConsent has the valid JWS signed consent and ConsentDetail object is
@@ -35,7 +35,7 @@ Feature: On calling POST Consent Fetch Flow API, Verify that on sending a valid
     Then  Verify that the response code 200 is received
     And   Verify that the field of Version contains the version of NBFC-AA Ecosystem API that is currently
   supported
-    And   Verify the ConsentId is a valid UUID string
+    And   Verify the consentId is a valid UUID string
     And   Verify that the status displayed is ACTIVE
     And   Verify that the createTimestamp is sent within time consent POST request and current time
     And   Verify that the signedConsent has the valid JWS signed consent and ConsentDetail object is

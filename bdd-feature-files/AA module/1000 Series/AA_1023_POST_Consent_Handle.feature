@@ -2,10 +2,9 @@ Feature: On calling POST Consent Handle request API,Verify that on sending conse
   handle request for a pending approval consent and user deregistered from AA,
   error response is received.
 
-  Scenario: 1023_1 On calling POST Consent Handle request API,generate a random customer
-  id, ask the user to register the generated customer id to AA, link 1 account and
+  Scenario: 1023_1 On calling POST Consent Handle request API,generate a random  customerId, ask the user to register the generated customerId to AA, link 1 account and
   confirm. Then send a valid consent request for that FIType, ask the user to deregister
-  the customer id, and then send a consent handle request and then Verify that the error
+  the customerId, and then send a consent handle request and then Verify that the error
   response is received.
     Given Calling the "POST /Consent/handle" Flow API
     When  POST action is performed

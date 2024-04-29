@@ -1,10 +1,10 @@
-Feature: On Calling Account de-link request as alternate AA with details of regular AA, error response
+Feature: On Calling Account delink request as alternate AA with details of regular AA, error response
   is received.
 
   Scenario: 1052_1 Use the user with single account in first supported FIType, send a valid account link request
-  as regular AA, get the received OTP from the user and send a valid account link token request for regular AA.
+  as regular AA, get the received OTP from the user and send a valid account link verify request for regular AA.
   Use the same user and account details, send a valid account link request as alternate AA, get the received
-  OTP from user and send a valid account link token request for alternate AA. Send Account de-link request as
+  OTP from user and send a valid account link verify request for alternate AA. Send Account delink request as
   alternate AA with customer id of regular AA and Verify that HTTP 400 is displayed in response.
     Given Calling the "POST /Accounts/delink" Flow API
     When  POST Action is performed
@@ -15,9 +15,9 @@ Feature: On Calling Account de-link request as alternate AA with details of regu
     And   Verify that the txnid id is same as the txnid from request
 
   Scenario: 1052_2 Use the user with single account in first supported FIType, send a valid account link request
-  as regular AA, get the received OTP from the user and send a valid account link token request for regular AA.
+  as regular AA, get the received OTP from the user and send a valid account link verify request for regular AA.
   Use the same user and account details, send a valid account link request as alternate AA, get the received
-  OTP from user and send a valid account link token request for alternate AA. Send Account de-link request as
+  OTP from user and send a valid account link verify request for alternate AA. Send Account delink request as
   alternate AA with linkRefNumber of regular AA and Verify that HTTP 400 is displayed in response.
     Given Calling the "POST /Accounts/delink" Flow API
     When  POST Action is performed

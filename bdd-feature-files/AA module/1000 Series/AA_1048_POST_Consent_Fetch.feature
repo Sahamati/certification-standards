@@ -2,7 +2,7 @@ Feature: On calling POST Consent Fetch Flow API, Verify that on sending invalid
   Client API key in consent fetch request, consent with error response is received.
 
   Scenario: 1048_1 On calling POST Consent Fetch Flow API,Use the pre-linked user details
-  from settings, send a valid consent request,set the Post consent response on mock server,
+  from settings,set the Post consent response on mock server, send a valid consent request,
   ask the user to approve the consent & confirm, send a valid consent handle to receive APPROVED
   status, set consent/notification response on FIP and FIU mock server, ask the user to approve
   consent & confirm and then send a consent fetch request with following variations on the
@@ -14,7 +14,7 @@ Feature: On calling POST Consent Fetch Flow API, Verify that on sending invalid
     And   Verify that the version is supported version
 
   Scenario: 1048_2 On calling POST Consent Fetch Flow API,Use the pre-linked user details
-  from settings, send a valid consent request,set the Post consent response on mock server,
+  from settings,set the Post consent response on mock server, send a valid consent request,
   ask the user to approve the consent & confirm, send a valid consent handle to receive APPROVED
   status, set consent/notification response on FIP and FIU mock server, ask the user to approve
   consent & confirm and then send a consent fetch request with following variations on the
@@ -26,7 +26,7 @@ Feature: On calling POST Consent Fetch Flow API, Verify that on sending invalid
     And   Verify that the version is supported version
 
   Scenario: 1048_3 On calling POST Consent Fetch Flow API,Use the pre-linked user details
-  from settings, send a valid consent request,set the Post consent response on mock server,
+  from settings,set the Post consent response on mock server, send a valid consent request,
   ask the user to approve the consent & confirm, send a valid consent handle to receive APPROVED
   status, set consent/notification response on FIP and FIU mock server, ask the user to approve
   consent & confirm and then send a consent fetch request with following variations on the
@@ -38,7 +38,7 @@ Feature: On calling POST Consent Fetch Flow API, Verify that on sending invalid
     And   Verify that the version is supported version
 
   Scenario: 1048_4 On calling POST Consent Fetch Flow API,Use the pre-linked user details
-  from settings, send a valid consent request,set the Post consent response on mock server,
+  from settings,set the Post consent response on mock server, send a valid consent request,
   ask the user to approve the consent & confirm, send a valid consent handle to receive APPROVED
   status, set consent/notification response on FIP and FIU mock server, ask the user to approve
   consent & confirm and then send a consent fetch request with following variations on the
@@ -50,7 +50,7 @@ Feature: On calling POST Consent Fetch Flow API, Verify that on sending invalid
     And   Verify that the version is supported version
 
   Scenario: 1048_5 On calling POST Consent Fetch Flow API,Use the pre-linked user details
-  from settings, send a valid consent request,set the Post consent response on mock server,
+  from settings,set the Post consent response on mock server, send a valid consent request,
   ask the user to approve the consent & confirm, send a valid consent handle to receive APPROVED
   status, set consent/notification response on FIP and FIU mock server, ask the user to approve
   consent & confirm and then send a consent fetch request with following variations on the

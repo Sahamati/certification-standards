@@ -2,9 +2,9 @@ Feature: On calling POST Account Link Notification API, verify that on sending a
   invalid customerAddress, the error response is received.
 
   Scenario: 3027_1 On calling POST Account Link Notification API, set the account link response
-  with AuthenticatorType as DIRECT in mock FIP. Generate a random customer id and ask the user
-  to register the generated customer id. Link a specific account from mock FIP and confirm.
-  Check that the account link request is received for the same account and customer id in mock FIP.
+  with AuthenticatorType as DIRECT in mock FIP. Generate a random  customerId and ask the user
+  to register the generated  customerId. Link a specific account from mock FIP and confirm.
+  Check that the account link request is received for the same account and  customerId in mock FIP.
   Finally send a valid account link notification request and set the Invalid format on customer
   address and Verify that the error response is received.
     Given Calling "POST /Account/link/Notification" Flow API
@@ -17,9 +17,9 @@ Feature: On calling POST Account Link Notification API, verify that on sending a
     And   Verify that the txnid id is same as the txnid from request
 
   Scenario: 3027_2 On calling POST Account Link Notification API, set the account link response
-  with AuthenticatorType as DIRECT in mock FIP. Generate a random customer id and ask the user
-  to register the generated customer id. Link a specific account from mock FIP and confirm.
-  Check that the account link request is received for the same account and customer id in mock FIP.
+  with AuthenticatorType as DIRECT in mock FIP. Generate a random  customerId and ask the user
+  to register the generated  customerId. Link a specific account from mock FIP and confirm.
+  Check that the account link request is received for the same account and  customerId in mock FIP.
   Finally send a valid account link notification request and set the proper customer identifier
   with last character removed at proper AA identifier on customer address and Verify
   that the error response is received.
@@ -33,9 +33,9 @@ Feature: On calling POST Account Link Notification API, verify that on sending a
     And   Verify that the txnid id is same as the txnid from request
 
   Scenario: 3027_3 On calling POST Account Link Notification API, set the account link response
-  with AuthenticatorType as DIRECT in mock FIP. Generate a random customer id and ask the user
-  to register the generated customer id. Link a specific account from mock FIP and confirm.
-  Check that the account link request is received for the same account and customer id in mock
+  with AuthenticatorType as DIRECT in mock FIP. Generate a random  customerId and ask the user
+  to register the generated  customerId. Link a specific account from mock FIP and confirm.
+  Check that the account link request is received for the same account and  customerId in mock
   FIP. Finally send a valid account link notification request and set the proper customer
   identifier with an extra character added at the end of proper AA identifier on customer address.
   and Verify that the error response is received.
@@ -49,9 +49,9 @@ Feature: On calling POST Account Link Notification API, verify that on sending a
     And   Verify that the txnid id is same as the txnid from request
 
   Scenario: 3027_4 On calling POST Account Link Notification API, set the account link response
-  with AuthenticatorType as DIRECT in mock FIP. Generate a random customer id and ask the user
-  to register the generated customer id. Link a specific account from mock FIP and confirm.
-  Check that the account link request is received for the same account and customer id in mock FIP.
+  with AuthenticatorType as DIRECT in mock FIP. Generate a random  customerId and ask the user
+  to register the generated  customerId. Link a specific account from mock FIP and confirm.
+  Check that the account link request is received for the same account and  customerId in mock FIP.
   Finally send a valid account link notification request and set the proper customer identifier
   at proper AA identifier with last character removed on customer address and Verify that
   the error response is received.
@@ -65,9 +65,9 @@ Feature: On calling POST Account Link Notification API, verify that on sending a
     And   Verify that the txnid id is same as the txnid from request
 
   Scenario: 3027_5 On calling POST Account Link Notification API, set the account link response
-  with AuthenticatorType as DIRECT in mock FIP. Generate a random customer id and ask the user
-  to register the generated customer id. Link a specific account from mock FIP and confirm.
-  Check that the account link request is received for the same account and customer id in mock
+  with AuthenticatorType as DIRECT in mock FIP. Generate a random customerId and ask the user
+  to register the generated  customerId. Link a specific account from mock FIP and confirm.
+  Check that the account link request is received for the same account and  customerId in mock
   FIP. Finally send a valid account link notification request and set the proper customer
   identifier at proper AA identifier with one character added at end on customer address.
   and Verify that the error response is received.

@@ -2,9 +2,9 @@ Feature: On calling POST Account Link Notification API, verify that on sending a
   invalid accRefNumber, the error response is received.
 
   Scenario: 3026_1 On calling POST Account Link Notification API, set the account link response with AuthenticatorType as DIRECT
-  in mock FIP. Generate a random customer id and ask the user to register the generated customer id. Link a specific
-  account from mock FIP and confirm. Check that the account link request is received for the same account and customer
-  id in mock FIP. Finally send a valid account link notification request and use the valid accRefNumber and add an extra
+  in mock FIP. Generate a random customerId and ask the user to register the generated customerId. Link a specific
+  account from mock FIP and confirm. Check that the account link request is received for the same account and customerId
+  in mock FIP. Finally send a valid account link notification request and use the valid accRefNumber and add an extra
   character at the end and Verify that the error response is received.
     Given Calling "POST /Account/link/Notification" Flow API
     When  POST action is performed
@@ -16,9 +16,9 @@ Feature: On calling POST Account Link Notification API, verify that on sending a
     And   Verify that the txnid id is same as the txnid from request
 
   Scenario: 3026_2 On calling POST Account Link Notification API, set the account link response with AuthenticatorType as DIRECT
-  in mock FIP. Generate a random customer id and ask the user to register the generated customer id. Link a specific
-  account from mock FIP and confirm. Check that the account link request is received for the same account and customer
-  id in mock FIP. Finally send a valid account link notification request and use the valid accRefNumber and remove the
+  in mock FIP. Generate a random customerId and ask the user to register the generated customerId. Link a specific
+  account from mock FIP and confirm. Check that the account link request is received for the same account and customerId
+  in mock FIP. Finally send a valid account link notification request and use the valid accRefNumber and remove the
   last character and Verify that the error response is received.
     Given Calling "POST /Account/link/Notification" Flow API
     When  POST action is performed
@@ -30,9 +30,9 @@ Feature: On calling POST Account Link Notification API, verify that on sending a
     And   Verify that the txnid id is same as the txnid from request
 
   Scenario: 3026_3 On calling POST Account Link Notification API, set the account link response with AuthenticatorType
-  as DIRECT in mock FIP. Generate a random customer id and ask the user to register the generated customer id. Link a
+  as DIRECT in mock FIP. Generate a random customerId and ask the user to register the generated customerId. Link a
   specific account from mock FIP and confirm. Check that the account link request is received for the same account and
-  customer id in mock FIP. Finally send a valid account link notification request and generate a random string of same
+  customerId in mock FIP. Finally send a valid account link notification request and generate a random string of same
   length and try as accRefNumber and Verify that the error response is received.
     Given Calling "POST /Account/link/Notification" Flow API
     When  POST action is performed

@@ -1,6 +1,5 @@
-Feature: On Calling FI fetch request with null values, empty string, empty array and
-  not in enum values for each required field and check if it is responding with HTTP
-  status code 400 (Bad request).
+Feature: On Calling FI fetch request with basic invalid values for each required field and check if it
+  is responding with HTTP status code 400 (Bad request).
 
   Scenario: 3029_1 "Use the pre-linked user details from settings, set Consent/notification
   response in mock server, send one valid consent post request.Set Fi/Notification

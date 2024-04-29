@@ -4,11 +4,11 @@ Feature: On calling FIP and FIU Notifications API, verify that on regular FIP re
 
   Scenario: 2038_1 On calling FIP and FIU Notifications API, use the pre-generated consent details from settings and
   follow the below steps:
-  1. Generate a random customer id.
-  2. Ask the user to register the generated customer id, link a particular account in regular mock FIP and link a
+  1. Generate a random  customerId.
+  2. Ask the user to register the generated customerId, link a particular account in regular mock FIP and link a
   particular account in alternate mock FIP in AA app and confirm.
-  3. Send a valid consent request.
-  4. Set POST consent response in FIP mock server.
+  3. Set POST consent response in FIP mock server.
+  4. Send a valid consent request.
   5. Ask the user to select accounts one account from regular mock FIPs, approve the consent and confirm.
   6. Send a valid consent handle to receive APPROVED status.
   7. Send a consent fetch request.

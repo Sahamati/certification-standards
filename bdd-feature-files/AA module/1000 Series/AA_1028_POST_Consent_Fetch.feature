@@ -1,5 +1,5 @@
 Feature: On calling POST Consent Fetch Flow API, Verify that on sending consent fetch request
-  as an alternate FIU for a valid consent Id of regular FIU, the error response is received.
+  as an alternate FIU for a valid consentId of regular FIU, the error response is received.
 
   Scenario: 1028_1 On calling POST Consent Fetch Flow API, Use the pre-linked user details
   from settings.Set the Post consent response on mock server, send a valid consent request,

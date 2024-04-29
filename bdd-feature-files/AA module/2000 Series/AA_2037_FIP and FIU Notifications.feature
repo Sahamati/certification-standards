@@ -70,7 +70,7 @@ Feature: On calling FIP and FIU Notifications API, verify that on FIP responding
 
   Scenario: 2037_7 On calling FIP and FIU Notifications API, use the pre-generated consent details from settings, set a
   valid FI response in mock FIP. Send a FI request to AA and set the linkRefNumber and maskedAccNumber of an account
-  that is linked to the current customer id but not part of pre-generated consent and set the FI fetch response in mock
+  that is linked to the current  customerId but not part of pre-generated consent and set the FI fetch response in mock
   FIP. Set the FI notification response in FIU mock server and send a FI ready notification to AA.
   and wait to receive FI notification in mock FIU.
     Given Calling the "FIP and FIU Notifications" Flow API

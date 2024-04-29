@@ -1,6 +1,6 @@
-Feature: On Calling Account de-link request with valid details and incorrect version and check if it is responding with error response.
+Feature: On Calling Account delink request with valid details and incorrect version and check if it is responding with error response.
 
-  Scenario: 1049_1 Send Account de-link request with incorrect version number 10 in ver field of request body and Verify
+  Scenario: 1049_1 Send Account delink request with incorrect version number 10 in ver field of request body and Verify
   that HTTP 400 is displayed in response.
     Given Calling the "POST /Accounts/delink" Flow API
     When  POST Action is performed

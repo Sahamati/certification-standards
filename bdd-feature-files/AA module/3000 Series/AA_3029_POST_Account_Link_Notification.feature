@@ -1,10 +1,11 @@
-Feature: On calling POST Account Link Notification API, verify that on sending account link notification request when
-  the account is de-registered, the error response is received.
+Feature: On calling POST Account Link Notification API, Verify that on sending
+  account link notification request as alternate FIP with account details of regular FIP,
+  error response is received.
 
   Scenario: 3029_1 On calling POST Account Link Notification API, set the account link response with AuthenticatorType as DIRECT
-  in mock FIP. Generate a random customer id and ask the user to register the generated customer id. Link a specific
-  account from mock FIP and confirm. Check that the account link request is received for the same account and customer
-  id in mock FIP. Ask the user to de-register the customer id and confirm and finally send a valid account link
+  in mock FIP. Generate a random customerId and ask the user to register the generated customerId. Link a specific
+  account from mock FIP and confirm. Check that the account link request is received for the same account and customerId
+  in mock FIP. Ask the user to de-register the customerId and confirm and finally send a valid account link
   notification request. Use the valid account link notification request generated for regular FIP, and send the request
   as alternate FIP and expect response code 400.
     Given Calling "POST /Account/link/Notification" Flow API
@@ -17,9 +18,9 @@ Feature: On calling POST Account Link Notification API, verify that on sending a
     And   Verify that the txnid id is same as the txnid from request
 
   Scenario: 3029_2 On calling POST Account Link Notification API, set the account link response with AuthenticatorType as DIRECT
-  in mock FIP. Generate a random customer id and ask the user to register the generated customer id. Link a specific
-  account from mock FIP and confirm. Check that the account link request is received for the same account and customer
-  id in mock FIP. Ask the user to de-register the customer id and confirm and finally send a valid account link
+  in mock FIP. Generate a random customerId and ask the user to register the generated customerId. Link a specific
+  account from mock FIP and confirm. Check that the account link request is received for the same account and customerId
+  in mock FIP. Ask the user to de-register the customerId and confirm and finally send a valid account link
   notification request. Use the valid account link notification request generated for regular FIP, and change the
   Notifier.id to alternate FIP id. Send the request as alternate FIP and expect response code 400.
     Given Calling "POST /Account/link/Notification" Flow API

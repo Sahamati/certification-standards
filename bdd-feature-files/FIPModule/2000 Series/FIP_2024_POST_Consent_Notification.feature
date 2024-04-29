@@ -3,7 +3,7 @@ Feature: On Calling POST Consent Notification request with invalid ConsentStatus
 
   Scenario: 2024_1 Use the pre-linked user details from settings, set Consent/notification response in mock
   server, post a valid consent and try the following. Send POST Consent Notification request with a invalid
-  consent Id (random UUID). Verify that HTTP 400 is displayed in response.
+  consentId (random UUID). Verify that HTTP 400 is displayed in response.
     Given Calling the "POST /Consent/Notification" Flow API
     When  POST action is performed
     Then  Verify that the Response code 400 is displayed
@@ -28,7 +28,7 @@ Feature: On Calling POST Consent Notification request with invalid ConsentStatus
 
   Scenario: 2024_3 Use the pre-linked user details from settings, set Consent/notification response in mock
   server, post a valid consent and try the following. Send POST Consent Notification request with a valid
-  consent Id generate by different aa for consentStatus PAUSED. Verify that HTTP 400 is displayed in response.
+  consentId generate by different aa for consentStatus PAUSED. Verify that HTTP 400 is displayed in response.
     Given Calling the "POST /Consent/Notification" Flow API
     When  POST action is performed
     Then  Verify that the Response code 400 is displayed
@@ -40,7 +40,7 @@ Feature: On Calling POST Consent Notification request with invalid ConsentStatus
 
   Scenario: 2024_4 Use the pre-linked user details from settings, set Consent/notification response in mock
   server, post a valid consent and try the following. Send POST Consent Notification request with a valid
-  consent Id generate by different aa for consentStatus ACTIVE. Verify that HTTP 400 is displayed in response.
+  consentId generate by different aa for consentStatus ACTIVE. Verify that HTTP 400 is displayed in response.
     Given Calling the "POST /Consent/Notification" Flow API
     When  POST action is performed
     Then  Verify that the Response code 400 is displayed
@@ -52,7 +52,7 @@ Feature: On Calling POST Consent Notification request with invalid ConsentStatus
 
   Scenario: 2024_5 Use the pre-linked user details from settings, set Consent/notification response in mock
   server, post a valid consent and try the following. Send POST Consent Notification request with a valid
-  consent Id generate by different aa for consentStatus REVOKED. Verify that HTTP 400 is displayed in response.
+  consentId generate by different aa for consentStatus REVOKED. Verify that HTTP 400 is displayed in response.
     Given Calling the "POST /Consent/Notification" Flow API
     When  POST action is performed
     Then  Verify that the Response code 400 is displayed
@@ -64,7 +64,7 @@ Feature: On Calling POST Consent Notification request with invalid ConsentStatus
 
   Scenario: 2024_6 Use the pre-linked user details from settings, set Consent/notification response in mock
   server, post a valid consent and try the following. Send POST Consent Notification request with a valid
-  consent Id generate by different aa for consentStatus EXPIRED. Verify that HTTP 400 is displayed in response.
+  consentId generate by different aa for consentStatus EXPIRED. Verify that HTTP 400 is displayed in response.
     Given Calling the "POST /Consent/Notification" Flow API
     When  POST action is performed
     Then  Verify that the Response code 400 is displayed

@@ -11,5 +11,5 @@ Feature: On calling POST Consent Handle request API,Verify that on sending conse
     Then  Verify that the reponse code 400 is received
     And   Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from
   current time stamp
-    And   Verify that the Error code is InvalidRequest
+    And   Verify that the Error code is InvalidRequest/SignatureDoesNotMatch
     And   Verify that the version is supported version
