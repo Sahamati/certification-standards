@@ -11,7 +11,7 @@ Feature: On calling POST Consent Fetch Flow API, verify that on sending the cons
     Then  Verify that the response code 400 is received
     And   Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from
   current time stamp
-    And   Verify that the Error code is InvalidConsentId
+    And   Verify that the Error code is InvalidRequest
     And   Verify that the version is supported version
 
   Scenario: 1027_2 On calling POST Consent Fetch Flow API, Use the pre-linked user details
