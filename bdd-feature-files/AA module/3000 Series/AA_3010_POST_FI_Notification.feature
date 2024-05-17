@@ -8,6 +8,7 @@ Feature: On calling POST FI Notification API, verify that on sending FI notifica
     When  POST action is performed
     Then  Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from current
   time stamp
+    Then  Verify that the reponse code 400 is received
     And   Verify that the error code is followed as per the fields
     And   Verify that the error code is  InvalidRequest
     And   Verify that the version is supported version
@@ -20,6 +21,7 @@ Feature: On calling POST FI Notification API, verify that on sending FI notifica
     When  POST action is performed
     Then  Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from current
   time stamp
+    Then  Verify that the reponse code 400 is received
     And   Verify that the error code is followed as per the fields
     And   Verify that the error code is  InvalidRequest
     And   Verify that the version is supported version
@@ -33,6 +35,7 @@ Feature: On calling POST FI Notification API, verify that on sending FI notifica
     When  POST action is performed
     Then  Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from current
   time stamp
+    Then  Verify that the reponse code 400 is received
     And   Verify that the error code is followed as per the fields
     And   Verify that the error code is  InvalidRequest
     And   Verify that the version is supported version
@@ -45,6 +48,7 @@ Feature: On calling POST FI Notification API, verify that on sending FI notifica
     When  POST action is performed
     Then  Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from current
   time stamp
+    Then  Verify that the reponse code 400 is received
     And   Verify that the error code is followed as per the fields
     And   Verify that the error code is  InvalidRequest
     And   Verify that the version is supported version
@@ -57,6 +61,7 @@ Feature: On calling POST FI Notification API, verify that on sending FI notifica
     When  POST action is performed
     Then  Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from current
   time stamp
+    Then  Verify that the reponse code 400 is received
     And   Verify that the error code is followed as per the fields
     And   Verify that the error code is  InvalidRequest
     And   Verify that the version is supported version

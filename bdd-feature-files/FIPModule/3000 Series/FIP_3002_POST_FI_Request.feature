@@ -1,5 +1,5 @@
-Feature: On Calling POST FI Request  with null values, empty string, empty array and not in enum
-  values for each required field and check if it is responding with HTTP status code 400 (Bad request).
+Feature: On Calling POST FI Request with basic invalid values for each required field
+  and check if it is responding with HTTP status code 400 (Bad request).
 
   Scenario: 3002_1 Use the pre-linked user details from settings,set Consent/notification response in mock
   server, send one valid consent post request and then try the following. Send POST FIRequest with null

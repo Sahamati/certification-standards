@@ -27,7 +27,7 @@ Feature: On calling POST FI Notification API, verify that on sending FI notifica
 
   Scenario: 3012_3 On calling POST FI Notification API, use the pre-generated consent details from settings. Set a valid
   FI response in mock FIP and send a valid FI request to AA. Finally send a FI notification request and set the valid
-  timestamp with +15 minutes from current time and Verify that the error response is received.
+  timestamp with +16 minutes from current time and Verify that the error response is received.
     Given Calling the "POST /FI/Notification" Flow API
     When  POST action is performed
     Then  Verify that the response code displayed is HTTP 400
@@ -39,7 +39,7 @@ Feature: On calling POST FI Notification API, verify that on sending FI notifica
 
   Scenario: 3012_4 On calling POST FI Notification API, use the pre-generated consent details from settings. Set a valid
   FI response in mock FIP and send a valid FI request to AA. Finally send a FI notification request and set the valid
-  timestamp with -15 minutes from current time and Verify that the error response is received.
+  timestamp with -16 minutes from current time and Verify that the error response is received.
     Given Calling the "POST /FI/Notification" Flow API
     When  POST action is performed
     Then  Verify that the response code displayed is HTTP 400

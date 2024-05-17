@@ -2,10 +2,10 @@ Feature: On calling POST Account Link Notification API, verify that on sending a
   the account is de-registered, the error response is received.
 
   Scenario: 3028_1 On calling POST Account Link Notification API,Set the account link response
-  with AuthenticatorType as DIRECT in mock FIP, generate a random customer id, ask the user to
-  register the generated customer id and link a specific account from mock FIP & confirm,
-  check if account link request is received for the same account and customer id in mock FIP,
-  ask the user to deregister the customer id & confirm and finally send a valid account link
+  with AuthenticatorType as DIRECT in mock FIP, generate a random  customerId, ask the user to
+  register the generated customerId and link a specific account from mock FIP & confirm,
+  check if account link request is received for the same account and customerId in mock FIP,
+  ask the user to deregister the customerId & confirm and finally send a valid account link
   notification request and Verify that the error response is received.
     Given Calling "POST /Account/link/Notification" Flow API
     When  POST action is performed

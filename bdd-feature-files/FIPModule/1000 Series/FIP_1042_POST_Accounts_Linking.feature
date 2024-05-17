@@ -1,5 +1,5 @@
 Feature: On Calling POST Account Link API  with invalid account details and check if it is responding with
-  a bad request.
+  error response.
 
   Scenario: 1042_1 Try with the invalid test user and account JSON available from settings. Send Account Link
   request with Invalid Account Details Validation for FIType DEPOSIT and Verify that HTTP 404 is displayed

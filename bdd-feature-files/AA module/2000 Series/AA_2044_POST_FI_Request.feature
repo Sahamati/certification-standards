@@ -1,5 +1,5 @@
-Feature: On calling POST FI Request API, Verify that on sending FI request with valid
-  selected consent details and invalid Client API key, error response is received.
+Feature: On calling POST FI Request API, Verify that on sending FI request with invalid
+  Client API key, error response is received.
 
   Scenario: 2044_1 On calling POST FI Request API,Use the pre-generated consent details from
   settings, set a valid fi response in mock fip and send a valid FI request with following

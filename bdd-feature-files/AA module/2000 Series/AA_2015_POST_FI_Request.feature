@@ -8,10 +8,10 @@ Feature: On calling POST FI Request API, verify whether FI request fails if freq
   FI/fetch response in mock FIP and then send FI request, check if FI/request is received in
   mock FIP,Send FI/notification with Status 'READY'. Wait for FI/Notification received at
   FIU with READY status. Send FI/Fetch request and Finally Send FI request again and Verify
-  that the HTTP status code 200 is received.
-    Given Calling the POST FI Request API
+  that the HTTP status code 400 is received for second FI request.
+    Given Calling the "POST /FI/request" Flow API
     When  POST action is performed
-    Then  Verify that the response code displayed is HTTP 200 for first request
+    Then  Verify that the response code displayed is HTTP 200 for first FI request & 400 for second FI request
     And   Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from current
   time stamp
     And   Verify that the error code is InvalidConsentUse
@@ -25,10 +25,10 @@ Feature: On calling POST FI Request API, verify whether FI request fails if freq
   FI/fetch response in mock FIP and then send FI request, check if FI/request is received in
   mock FIP,Send FI/notification with Status 'READY'. Wait for FI/Notification received at
   FIU with READY status. Send FI/Fetch request and Finally Send FI request again and Verify
-  that the HTTP status code 200 is received.
-    Given Calling the POST FI Request API
+  that the HTTP status code 400 is received for second FI request.
+    Given Calling the "POST /FI/request" Flow API
     When  POST action is performed
-    Then  Verify that the response code displayed is HTTP 400 for first request
+    Then  Verify that the response code displayed is HTTP 200 for first FI request & 400 for second FI request
     And   Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from current
   time stamp
     And   Verify that the error code is InvalidConsentUse
@@ -42,10 +42,10 @@ Feature: On calling POST FI Request API, verify whether FI request fails if freq
   FI/fetch response in mock FIP and then send FI request, check if FI/request is received in
   mock FIP,Send FI/notification with Status 'READY'. Wait for FI/Notification received at
   FIU with READY status. Send FI/Fetch request and Finally Send FI request again and Verify
-  that the HTTP status code 200 is received.
-    Given Calling the POST FI Request API
+  that the HTTP status code 400 is received for second FI request.
+    Given Calling the "POST /FI/request" Flow API
     When  POST action is performed
-    Then  Verify that the response code displayed is HTTP 400 for first request
+    Then  Verify that the response code displayed is HTTP 200 for first FI request & 400 for second FI request
     And   Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from current
   time stamp
     And   Verify that the error code is InvalidConsentUse
@@ -59,10 +59,10 @@ Feature: On calling POST FI Request API, verify whether FI request fails if freq
   FI/fetch response in mock FIP and then send FI request, check if FI/request is received in
   mock FIP,Send FI/notification with Status 'READY'. Wait for FI/Notification received at
   FIU with READY status. Send FI/Fetch request and Finally Send FI request again and Verify
-  that the HTTP status code 200 is received.
-    Given Calling the POST FI Request API
+  that the HTTP status code 400 is received for second FI request.
+    Given Calling the "POST /FI/request" Flow API
     When  POST action is performed
-    Then  Verify that the response code displayed is HTTP 400 for first request
+    Then  Verify that the response code displayed is HTTP 200 for first FI request & 400 for second FI request
     And   Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from current
   time stamp
     And   Verify that the error code is InvalidConsentUse

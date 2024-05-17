@@ -3,7 +3,7 @@ Feature: On calling POST Consent Notification API, verify that on sending consen
 
   Scenario: 3003_1 On calling POST Consent Notification API, set the POST consent response in FIP mock server. Send a
   valid consent request and ask the user to approve the consent and confirm. Send a valid consent handle to receive
- APPROVED status. Send a consent fetch request and finally send a consent notification request with incorrect version
+  APPROVED status. Send a consent fetch request and finally send a consent notification request with incorrect version
   number from settings and Verify that the error response is received.
     Given Calling the "POST /Consent/Notification" Flow API
     When  POST action is performed

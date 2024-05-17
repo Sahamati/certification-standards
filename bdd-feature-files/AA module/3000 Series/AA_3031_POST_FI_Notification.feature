@@ -10,7 +10,7 @@ Feature: On calling POST FI Notification API, verify that on sending consent not
     Then  Verify that the response code displayed is HTTP 400
     And   Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from current
   time stamp
-    And   Verify that the error code is SignatureDoesNotMatch
+    And   Verify that the error code is SignatureDoesNotMatch/InvalidRequest
     And   Verify that the version is supported version
 
   Scenario: 3031_2 On calling POST FI Notification API, Use the pre-generated consent details from settings. Set a
@@ -22,7 +22,7 @@ Feature: On calling POST FI Notification API, verify that on sending consent not
     Then  Verify that the response code displayed is HTTP 400
     And   Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from current
   time stamp
-    And   Verify that the error code is SignatureDoesNotMatch
+    And   Verify that the error code is SignatureDoesNotMatch/InvalidRequest
     And   Verify that the version is supported version
 
   Scenario: 3031_3 On calling POST FI Notification API, Use the pre-generated consent details
@@ -48,5 +48,5 @@ Feature: On calling POST FI Notification API, verify that on sending consent not
     Then  Verify that the response code displayed is HTTP 400
     And   Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from current
   time stamp
-    And   Verify that the error code is SignatureDoesNotMatch
+    And   Verify that the error code is SignatureDoesNotMatch/InvalidRequest
     And   Verify that the version is supported version

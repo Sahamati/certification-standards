@@ -1,5 +1,5 @@
-Feature: On Calling Account de-link API with null values, empty string,empty arrays and not in enum values for
-  each required field and check if it is responding with a bad request.
+Feature: On Calling Account delink API with basic invalid values for each required
+  field and check if it is responding with a bad request.
 
   Scenario: 1046_1 On Calling Account delink request with null values set in required field send multiple request with
   each time set one required field set to null and Verify that HTTP 400 is displayed in response.

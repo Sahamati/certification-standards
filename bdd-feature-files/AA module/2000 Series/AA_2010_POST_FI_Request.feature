@@ -2,7 +2,7 @@ Feature: On calling POST FI Request API, verify that on sending FI request as al
   FIU with valid consent details of the regular FIU, the error response is received.
 
   Scenario: 2010_1 On calling the POST FI Request API, use the pre-generated consent details
-  from settings. Generate a valid FI request for alternate FIU and send the request as
+  from settings. Generate a valid FI request for regular FIU and send the request as
   alternate FIU and Verify that the HTTP status code 400 is received.
     Given Calling the "POST /FI/request" Flow API
     When  POST action is performed

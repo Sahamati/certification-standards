@@ -1,6 +1,5 @@
-Feature: On Calling Account link verify request with null values, empty string, empty array
-  and not in enum values for each required field and check if it is responding with HTTP
-  status code 400 (Bad request).
+Feature: On Calling Account link verify request with basic invalid values for each
+  required field and check if it is responding with HTTP status code 400 (Bad request)
 
   Scenario: 1067_1 Pick a single user account with first supported FIType and
   send single account link request and then send single account link verify request with

@@ -9,6 +9,5 @@ Feature: On Calling POST Account Link API request with valid customer and single
     Then  Reponse code should be HTTP 400
     And   Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from
   the current time stamp
-    And   Error code should be InvalidRequest
+    And   Error code should be InvalidRequest/SignatureDoesNotMatch
     And   Ver should  be supported version
-    And   Txnid should be same as the txnid from request

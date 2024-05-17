@@ -12,8 +12,8 @@ Feature: On Calling POST Consent Notification request as alternate AA with selec
     And   Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from
   the current time stamp
     And   Verify that the version is supported version
-    And   Verify that the txnid id is same as the txnid from request
     And   Error code should be InvalidRequest
+    And   Verify that the txnid id is same as the txnid from request
 
   Scenario: 2029_2 Use the pre-linked user details from settings, set Consent/notification
   response in mock servers, send a valid consent request as regular AA and alternate AA and
@@ -26,5 +26,5 @@ Feature: On Calling POST Consent Notification request as alternate AA with selec
     And   Verify that the timestamp has the exact format i.e the timestamp is in "+15" or "-15" minutes from
   the current time stamp
     And   Verify that the version is supported version
-    And   Verify that the txnid id is same as the txnid from request
     And   Error code should be InvalidNotifier
+    And   Verify that the txnid id is same as the txnid from request

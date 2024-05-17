@@ -1,7 +1,7 @@
-Feature: On Calling Account de-link request with 15 min variation from current timestamp and check
+Feature: On Calling Account delink request with 15 min variation from current timestamp and check
   if it is responding with a bad request.
 
-  Scenario: 1048_1 Send Account de-link request with future timestamp(current time + 15 min) in timestamp field and Verify that HTTP 400 is displayed in response
+  Scenario: 1048_1 Send Account delink request with future timestamp(current time + 15 min) in timestamp field and Verify that HTTP 400 is displayed in response
     Given Calling the "POST /Accounts/delink" Flow API
     When  POST Action is performed
     Then  Verify that the Response code 400 is displayed
@@ -10,7 +10,7 @@ Feature: On Calling Account de-link request with 15 min variation from current t
     And   Verify that the version is supported version
     And   Verify that the txnid id is same as the txnid from request
 
-  Scenario: 1048_2 Send Account de-link request with expired timestamp(current time - 15 min) in timestamp field and Verify that HTTP 400 is displayed in response
+  Scenario: 1048_2 Send Account delink request with expired timestamp(current time - 15 min) in timestamp field and Verify that HTTP 400 is displayed in response
     Given Calling the "POST /Accounts/delink" Flow API
     When  POST Action is performed
     Then  Verify that the Response code 400 is displayed

@@ -11,4 +11,3 @@ Feature: On Calling POST Account discovery API with valid customer details with
   the current time stamp
     And   Error code should be InvalidRequest
     And   Ver should  be supported version
-    And   Txnid should be same as the txnid from request

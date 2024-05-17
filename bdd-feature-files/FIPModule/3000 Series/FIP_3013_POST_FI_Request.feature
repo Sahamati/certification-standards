@@ -10,7 +10,7 @@ Feature: Send two FI request for consents of different fetchTypes and check if t
   4. Wait for FI ready notification
   5. Send FI fetch request .
   6. Finally send FI request again.
-  Send POST Account FIRequest twice for valid consent id generated with fetchType ONETIME and frequency unit
+  Send POST Account FIRequest twice for valid consentId generated with fetchType ONETIME and frequency unit
   HOUR. Verify that HTTP 400 is displayed in response.
     Given Calling the "POST /FI/Request" Flow API
     When  POST action is performed
@@ -30,7 +30,7 @@ Feature: Send two FI request for consents of different fetchTypes and check if t
   4. Wait for FI ready notification
   5. Send FI fetch request .
   6. Finally send FI request again.
-  Send POST Account FIRequest twice for valid consent id generated with fetchType PERIODIC and frequency unit
+  Send POST Account FIRequest twice for valid consentId generated with fetchType PERIODIC and frequency unit
   HOUR. Verify that HTTP 400 is displayed in response.
     Given Calling the "POST /FI/Request" Flow API
     When  POST action is performed
@@ -50,7 +50,7 @@ Feature: Send two FI request for consents of different fetchTypes and check if t
   4. Wait for FI ready notification
   5. Send FI fetch request .
   6. Finally send FI request again.
-  Send POST Account FIRequest twice for valid consent id generated with fetchType PERIODIC and frequency unit
+  Send POST Account FIRequest twice for valid consentId generated with fetchType PERIODIC and frequency unit
   DAY. Verify that HTTP 400 is displayed in response.
     Given Calling the "POST /FI/Request" Flow API
     When  POST action is performed
@@ -70,7 +70,7 @@ Feature: Send two FI request for consents of different fetchTypes and check if t
   4. Wait for FI ready notification
   5. Send FI fetch request .
   6. Finally send FI request again.
-  Send POST Account FIRequest twice for valid consent id generated with fetchType PERIODIC and frequency unit
+  Send POST Account FIRequest twice for valid consentId generated with fetchType PERIODIC and frequency unit
   MONTH. Verify that HTTP 400 is displayed in response.
     Given Calling the "POST /FI/Request" Flow API
     When  POST action is performed
@@ -90,7 +90,7 @@ Feature: Send two FI request for consents of different fetchTypes and check if t
   4. Wait for FI ready notification
   5. Send FI fetch request .
   6. Finally send FI request again.
-  Send POST Account FIRequest twice for valid consent id generated with fetchType PERIODIC and frequency unit
+  Send POST Account FIRequest twice for valid consentId generated with fetchType PERIODIC and frequency unit
   YEAR. Verify that HTTP 400 is displayed in response.
     Given Calling the "POST /FI/Request" Flow API
     When  POST action is performed

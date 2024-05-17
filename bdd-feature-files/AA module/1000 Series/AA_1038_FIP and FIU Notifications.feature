@@ -1,8 +1,8 @@
 Feature: On calling FIP and FIU Notifications Flow API, verify that on user linking a
   new account in AA app,discover, link and token link APIs of FIP is invoked correctly.
 
-  Scenario: 1038_1 On calling FIP and FIU Notifications Flow API,generate a random customer id,
-  ask the user to register the generated customer id and discover the accounts in the mock FIP
+  Scenario: 1038_1 On calling FIP and FIU Notifications Flow API,generate a random  customerId,
+  ask the user to register the generated  customerId and discover the accounts in the mock FIP
   server in AA app & confirm, validate if a proper discover account request is received in mock
   FIP, ask the user to link a particular account & confirm, validate if a proper link account
   request is received in the mock FIP, generate a random OTP and ask the user to use that to
